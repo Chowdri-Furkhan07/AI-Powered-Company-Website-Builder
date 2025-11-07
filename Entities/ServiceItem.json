@@ -1,0 +1,60 @@
+{
+  "name": "ServiceItem",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Service name"
+    },
+    "tagline": {
+      "type": "string",
+      "description": "Short tagline"
+    },
+    "description": {
+      "type": "string",
+      "description": "Service description"
+    },
+    "ai_description": {
+      "type": "string",
+      "description": "AI-generated description"
+    },
+    "icon": {
+      "type": "string",
+      "description": "Icon name (Lucide React)"
+    },
+    "features": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Key features"
+    },
+    "technologies": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Technologies used"
+    },
+    "pricing_model": {
+      "type": "string",
+      "description": "Pricing model"
+    },
+    "image_url": {
+      "type": "string",
+      "description": "Service image"
+    },
+    "display_order": {
+      "type": "number",
+      "description": "Display order"
+    },
+    "featured": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "required": [
+    "name",
+    "description"
+  ]
+}

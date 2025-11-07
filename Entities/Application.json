@@ -1,0 +1,93 @@
+{
+  "name": "Application",
+  "type": "object",
+  "properties": {
+    "job_id": {
+      "type": "string",
+      "description": "Reference to job posting"
+    },
+    "job_title": {
+      "type": "string",
+      "description": "Job title applied for"
+    },
+    "full_name": {
+      "type": "string",
+      "description": "Applicant full name"
+    },
+    "email": {
+      "type": "string",
+      "format": "email",
+      "description": "Applicant email"
+    },
+    "phone": {
+      "type": "string",
+      "description": "Phone number"
+    },
+    "resume_url": {
+      "type": "string",
+      "description": "URL to uploaded resume"
+    },
+    "cover_letter": {
+      "type": "string",
+      "description": "Cover letter text"
+    },
+    "linkedin_url": {
+      "type": "string",
+      "description": "LinkedIn profile URL"
+    },
+    "portfolio_url": {
+      "type": "string",
+      "description": "Portfolio URL"
+    },
+    "experience_years": {
+      "type": "number",
+      "description": "Years of experience"
+    },
+    "skills": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Candidate skills"
+    },
+    "education": {
+      "type": "string",
+      "description": "Educational background"
+    },
+    "ai_extracted_data": {
+      "type": "object",
+      "description": "AI-extracted resume data"
+    },
+    "ai_score": {
+      "type": "number",
+      "description": "AI-generated match score (0-100)"
+    },
+    "ai_summary": {
+      "type": "string",
+      "description": "AI-generated candidate summary"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "New",
+        "Reviewing",
+        "Shortlisted",
+        "Rejected",
+        "Interview Scheduled",
+        "Hired"
+      ],
+      "default": "New",
+      "description": "Application status"
+    },
+    "notes": {
+      "type": "string",
+      "description": "Admin notes"
+    }
+  },
+  "required": [
+    "job_id",
+    "job_title",
+    "full_name",
+    "email"
+  ]
+}

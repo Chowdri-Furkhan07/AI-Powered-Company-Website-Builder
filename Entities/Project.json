@@ -1,0 +1,75 @@
+{
+  "name": "Project",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Project name"
+    },
+    "description": {
+      "type": "string",
+      "description": "Project description"
+    },
+    "client": {
+      "type": "string",
+      "description": "Client name"
+    },
+    "category": {
+      "type": "string",
+      "description": "Project category"
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Project tags"
+    },
+    "technologies": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Technologies used"
+    },
+    "image_url": {
+      "type": "string",
+      "description": "Project image"
+    },
+    "project_url": {
+      "type": "string",
+      "description": "Live project URL"
+    },
+    "completion_date": {
+      "type": "string",
+      "format": "date",
+      "description": "Completion date"
+    },
+    "duration": {
+      "type": "string",
+      "description": "Project duration"
+    },
+    "team_size": {
+      "type": "number",
+      "description": "Team size"
+    },
+    "featured": {
+      "type": "boolean",
+      "default": false
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "Completed",
+        "In Progress",
+        "Planned"
+      ],
+      "default": "Completed"
+    }
+  },
+  "required": [
+    "name",
+    "description",
+    "category"
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "name": "CaseStudy",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "Case study title"
+    },
+    "client_name": {
+      "type": "string",
+      "description": "Client name"
+    },
+    "industry": {
+      "type": "string",
+      "description": "Client industry"
+    },
+    "challenge": {
+      "type": "string",
+      "description": "Client challenge"
+    },
+    "solution": {
+      "type": "string",
+      "description": "Our solution"
+    },
+    "results": {
+      "type": "string",
+      "description": "Results achieved"
+    },
+    "ai_summary": {
+      "type": "string",
+      "description": "AI-generated summary"
+    },
+    "technologies": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Technologies used"
+    },
+    "metrics": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "label": {
+            "type": "string"
+          },
+          "value": {
+            "type": "string"
+          }
+        }
+      },
+      "description": "Key metrics"
+    },
+    "image_url": {
+      "type": "string",
+      "description": "Featured image"
+    },
+    "gallery": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Image gallery"
+    },
+    "featured": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "required": [
+    "title",
+    "client_name",
+    "challenge",
+    "solution",
+    "results"
+  ]
+}

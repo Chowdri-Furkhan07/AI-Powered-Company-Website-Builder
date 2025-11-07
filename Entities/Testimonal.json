@@ -1,0 +1,53 @@
+{
+  "name": "Testimonial",
+  "type": "object",
+  "properties": {
+    "client_name": {
+      "type": "string",
+      "description": "Client name"
+    },
+    "company": {
+      "type": "string",
+      "description": "Client company"
+    },
+    "position": {
+      "type": "string",
+      "description": "Client position"
+    },
+    "content": {
+      "type": "string",
+      "description": "Testimonial content"
+    },
+    "ai_enhanced_content": {
+      "type": "string",
+      "description": "AI-enhanced version"
+    },
+    "rating": {
+      "type": "number",
+      "minimum": 1,
+      "maximum": 5,
+      "description": "Rating out of 5"
+    },
+    "avatar_url": {
+      "type": "string",
+      "description": "Client photo URL"
+    },
+    "project_name": {
+      "type": "string",
+      "description": "Related project"
+    },
+    "featured": {
+      "type": "boolean",
+      "default": false,
+      "description": "Featured on homepage"
+    },
+    "display_order": {
+      "type": "number",
+      "description": "Display order"
+    }
+  },
+  "required": [
+    "client_name",
+    "content"
+  ]
+}

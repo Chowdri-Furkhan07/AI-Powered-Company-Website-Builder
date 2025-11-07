@@ -1,0 +1,82 @@
+{
+  "name": "JobPosting",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "Job title"
+    },
+    "department": {
+      "type": "string",
+      "description": "Department name"
+    },
+    "location": {
+      "type": "string",
+      "description": "Job location"
+    },
+    "employment_type": {
+      "type": "string",
+      "enum": [
+        "Full-time",
+        "Part-time",
+        "Contract",
+        "Internship"
+      ],
+      "description": "Type of employment"
+    },
+    "experience_required": {
+      "type": "string",
+      "description": "Years of experience required"
+    },
+    "description": {
+      "type": "string",
+      "description": "Job description"
+    },
+    "responsibilities": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Job responsibilities"
+    },
+    "requirements": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Job requirements"
+    },
+    "skills": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Required skills"
+    },
+    "salary_range": {
+      "type": "string",
+      "description": "Salary range"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "Active",
+        "Closed",
+        "Draft"
+      ],
+      "default": "Active",
+      "description": "Job posting status"
+    },
+    "posted_date": {
+      "type": "string",
+      "format": "date",
+      "description": "Date posted"
+    }
+  },
+  "required": [
+    "title",
+    "department",
+    "location",
+    "employment_type"
+  ]
+}
